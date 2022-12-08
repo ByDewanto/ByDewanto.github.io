@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="dashboard Maruta">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Bayu Dewanto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="D:\school\pemweb\tugas akhir\dashboard.css">
+        <style>
+            body{
+                background-color: #f64646;
+            }
+            .grid-container {
+                display: grid;
+                gap: 1px;
+                background-color: #f64646;
+                padding: auto;
+                grid-template-columns: 5;
+                grid-template-rows: 10;
+            }
+
+            .grid-item {
+                text-align: center;
+                padding: 80px;
+                font-size: 30px;
+            }
+
+            .header {
+                grid-column: 1 / span 5;
+                grid-row: 1 / span 4;
+            }
+
+            .title {
+                grid-column: 2 / span 2;
+                grid-row: 5 / span 2;
+                text-align: left;
+            }
+            h1{
+                font-size:32px;
+                color: #fdfbfd;
+            }
+
+            h2{
+                font-size: 36px;
+                color: #fd7e22;
+            }
+
+            h3{
+                font-size: 18px;
+                color: #fdfbfd;
+            }
+
+            .GO{
+                grid-column: 4 / span 1;
+                grid-row: 5 / span 2;
+                font-size: 64px;
+                text-align: center;
+            }
+
+            #outer-circle {
+                background: #fdfbfd;
+                border-radius: 50%;
+                height:250px;
+                width:250px;
+                margin: 0px, 0px, 0px, 0px;
+            }
+
+            #inner-circle {
+                background: #f64646;
+                border-radius: 50%;
+                height: 175px;
+                width: 175px;
+                margin: auto;
+            }
+            
+            #inner2-circle {
+                background: #fdfbfd;
+                border-radius: 50%;
+                height: 300px;
+                width: 300px;
+                margin: auto;
+            }
+
+            .footer {
+                grid-column: 1 / span 5;
+                grid-row: 8 / span 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-container">
+                <div class="grid-item header"></HEADER></div>
+                <div class="grid-item title">
+                    <h1>Maruta's Work</h1>
+                    <h3>bassically every bullshit that you could put at here</h3>
+                </div>
+                <div class="grid-item GO">
+                    <div id="outer-circle">
+                        <br>
+                        <h2 id="GO">GO!</h2>
+                    </div>
+                </div>  
+                <div class="grid-item footer"></div>
+              </div>
+        </div>
+    </body>
+</html>
