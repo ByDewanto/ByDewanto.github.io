@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konfirmasi pembelian</title>
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 1px;
+            padding: 10px;
+        }
+
+        .grid-item {
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .judul {
+            grid-column: 1 / span 5;
+            grid-row: 1 / span 1;
+        }
+
+        .daftar-item {
+            text-align: left;
+            grid-column: 1 / span 3;
+            grid-row: 2 / span 2;
+        }
+
+        .cara-transaksi {
+            grid-column: 1 / span 3;
+            grid-row: 4 /span 2;
+        }
+
+        .cara-transaksi1 {
+            grid-column: 1 / span 3;
+            grid-row: 4 / span 1;
+        }
+        .cara-transaksi2 {
+            grid-column: 1 / span 3;
+            grid-row: 5 / span 1;
+        }
+
+        .preview-produk {
+            grid-column: 4 / span 2;
+            grid-row: 2 / span 4;
+        }
+
+        .footer {
+            grid-column: 1 / span 5;
+            grid-row: 6 / span 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item judul">
+            <h1>Konfirmasi Pembelian</h1>
+        </div>
+        <div class="grid-item daftar-item">
+            <h3>Barang  : </h3>
+            <h3>Harga   : </h3>
+        </div>
+        <div class="grid-item cara-transaksi">
+            <h3>Bayar dengan :</h3>
+            <div class="grid-item cara-transaksi1">
+                <h3></h3>
+                <input type="radio" id="BCA" name="cara-transaksi" value="BCA">
+                <label for="BCA"><img src="D:\school\pemweb\tugas akhir\bca.jpeg" alt="BCA"></label>
+                <input type="radio" id="OVO" name="cara-transaksi" value="OVO">
+                <label for="OVO"><img src="D:\school\pemweb\tugas akhir\ovo.jpg" alt="OVO"></label>
+            </div>
+            <div class="grid-item cara-transaksi2">
+                <input type="radio" id="Bank-Jateng" name="cara-transaksi" value="Bank-Jateng">
+                <label for="Bank-Jateng"><img src="D:\school\pemweb\tugas akhir\bank-jateng.jpg" alt="Bank-jateng"></label>
+                <input type="radio" id="PayPal" name="cara-transaksi" value="PayPal">
+                <label for="Paypal"><img src="D:\school\pemweb\tugas akhir\paypal.jpeg" alt="Paypal"></label>
+            </div>  
+        </div>
+        <div class="grid-item preview-produk"><img src="D:\school\pemweb\tugas akhir\batik.png" alt="batik"></div>
+        <div class="grid-item footer"></div>
+      </div>
+</body>
+</html>
