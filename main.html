@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pakaian</title>
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template-columns: 11;
+            grid-row: 10;
+        }
+
+        .grid-item {
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-column: 1 / span 10;
+            grid-row: 1 / span 2;
+        }
+
+        .item2 {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 1;
+        }
+
+        .item3 {
+            grid-column: 2 / span 5;
+            grid-row: 3 / span 7;
+        }
+
+        .item4 {
+            grid-column: 7 / span 3;
+            grid-row: 3 / span 7;
+        }
+
+        .item5 {
+            grid-column: 10 / span 1;
+            grid-row: 4 / span 1;
+        }
+
+        .item6 {
+            grid-column: 1 / span 10;
+            grid-row: 10 / span 1;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: left;
+        }
+        h2 {
+            font-size: 16px;
+            text-align: left;
+        }
+        label {
+            font-size: large;
+        }
+        
+        button {
+            size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">
+            <img src="D:\school\pemweb\tugas akhir\batik.png" alt="baju-batik">
+        </div>  
+        <div class="grid-item item4">
+            <h1>BAJU BATIK</h1>
+            <h2>Harga : </h2>
+            <h2>Rp. 190.000,00,-</h2>
+            <h2>Ukuran :</h2>
+            <input type="radio" id="XL" name="Ukuran-baju" value="XL">
+            <label for="XL">XL</label>
+            <input type="radio" id="L" name="Ukuran-baju" value="L">
+            <label for="L">L</label>
+            <input type="radio" id="M" name="Ukuran-baju" value="M">
+            <label for="M">M</label>
+            <input type="radio" id="S" name="Ukuran-baju" value="S">
+            <label for="S">S</label>
+            <br>
+            <button>beli</button>
+        </div>
+        <div class="grid-item item5"><h1></h1></div>
+        <div class="grid-item item6">
+            <h1></h1>
+        </div>
+    </div>
+</body>
+</html>
